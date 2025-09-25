@@ -2,7 +2,7 @@
 """app.py - Secure LLM Chatbot with Filters"""
 
 import streamlit as st
-from backend.chatbot import SafeChatbot
+from chatbot import SafeChatbot
 
 # Page configuration
 st.set_page_config(page_title='Secure LLM Chatbot', layout='centered')
