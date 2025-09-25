@@ -1,8 +1,8 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import torch
-from filters.pii_filter import contains_pii, detect_pii
-from filters.hate_classifier import HateClassifier
-from utils.logger import ConversationLogger
+from secure-llm-chatbot.pii_filter import contains_pii, detect_pii
+from secure-llm-chatbot.hate_classifier import HateClassifier
+from secure-llm-chatbot.logger import ConversationLogger
 
 # Choose a small model suitable for local testing; replace with an open LLaMA or larger model if available.
 MODEL_NAME = 'distilgpt2'
